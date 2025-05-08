@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+
+	<title>{ifset title}{include title|stripHtml}{/ifset}</title>
+
+	{php $vite = new App\Facades\ViteFacade();}
+	{php echo $vite->getTags()}
+</head>
+
+<body>
+	<div n:foreach="$flashes as $flash" n:class="flash, $flash->type">{$flash->message}</div>
+
+	{include content}
+
+	<script src="https://unpkg.com/nette-forms@3"></script>
+</body>
+</html>

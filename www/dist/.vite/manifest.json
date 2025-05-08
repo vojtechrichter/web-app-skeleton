@@ -1,0 +1,11 @@
+{
+  "src/scripts/index.js": {
+    "file": "js/main-CCWUGPO1.js",
+    "name": "main",
+    "src": "src/scripts/index.js",
+    "isEntry": true,
+    "css": [
+      "css/main-D5_7XqX7.css"
+    ]
+  }
+}

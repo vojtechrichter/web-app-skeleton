@@ -1,0 +1,7 @@
+/.idea/
+.docker
+/node_modules/
+/vendor/
+/log/*
+/temp/*
+/public/assets
