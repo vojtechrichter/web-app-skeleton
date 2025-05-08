@@ -1,0 +1,4 @@
+database:
+	dsn: 'sqlite:../main.db'
+	user:
+	password:

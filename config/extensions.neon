@@ -1,0 +1,7 @@
+extensions:
+    guzzle: Contributte\Guzzlette\DI\GuzzleExtension
+
+guzzle:
+    debug: true
+    client:
+        timeout: 30

@@ -1,0 +1,17 @@
+includes:
+	- environment.neon
+	- services.neon
+	- latte.neon
+	- extensions.neon
+	- database.neon
+
+application:
+	errorPresenter:
+		4xx: Error:Error4xx
+		5xx: Error:Error5xx
+	mapping: App\Presentation\*\**Presenter
+
+di:
+	export:
+		parameters: no
+		tags: no

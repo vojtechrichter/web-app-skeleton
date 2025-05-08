@@ -1,0 +1,6 @@
+latte:
+	strictTypes: yes
+	strictParsing: yes
+	extensions:
+		- App\Presentation\Accessory\LatteExtension
+		- Latte\Essential\RawPhpExtension
