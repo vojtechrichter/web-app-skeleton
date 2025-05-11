@@ -12,4 +12,9 @@ abstract class BasePresenter extends Presenter
 {
     #[Inject]
     public Explorer $db;
+
+    public function redrawFlashes(): void
+    {
+        $this->redrawControl('flashes');
+    }
 }

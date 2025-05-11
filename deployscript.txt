@@ -35,6 +35,9 @@ jobs:
       - name: Remove temp/cache directory
         run: rm -rf temp/cache
 
+      - name: Remove .vite folder
+        run: rm -rf node_modules/.vite
+
       - name: Set up SSH key
         run: |
           mkdir -p ~/.ssh

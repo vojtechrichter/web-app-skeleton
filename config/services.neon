@@ -1,8 +1,9 @@
-search:
-	-	in: %appDir%
-		classes:
-			- Facades/*Facade
-			- Services/*Service
-
 services:
 	- App\Core\RouterFactory::createRouter
+	- App\Core\Authenticator
+	- App\Facades\StripeFacade(%stripe.apiKey%)
+
+	security.passwords: Nette\Security\Passwords(::PASSWORD_ARGON2ID)
+	nette.latteFactory:
+	    setup:
+	        - addFilter('resize', App\Latte\ResizeFilter())

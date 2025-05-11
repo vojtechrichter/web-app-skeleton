@@ -11,10 +11,10 @@
 </head>
 
 <body>
-	<div n:foreach="$flashes as $flash" n:class="flash, $flash->type">{$flash->message}</div>
+	{snippet flashes}
+		{include './TemplateComponents/flashes.latte'}
+	{/snippet}
 
 	{include content}
-
-	<script src="https://unpkg.com/nette-forms@3"></script>
 </body>
 </html>
