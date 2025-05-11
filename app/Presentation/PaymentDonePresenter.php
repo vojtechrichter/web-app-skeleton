@@ -16,5 +16,7 @@ final class PaymentDonePresenter extends BasePresenter
     public function actionDefault(): void
     {
         $customer = $this->stripe->getCheckoutSessionCustomer($this->getParameter('session_id'));
+
+        // save customer id & simpleidentity
     }
 }

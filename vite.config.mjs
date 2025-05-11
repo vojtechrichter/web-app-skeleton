@@ -29,14 +29,11 @@ export default defineConfig({
                 }
             }
         },
-
-        assetsInclude: ['**/*.png', '**/*.jpg', '**/*.jpeg', '**/*.gif', '**/*.svg', '**/*.webp'],
     },
 
     resolve: {
         alias: {
             '@': resolve(__dirname, 'src'),
-            '@images': resolve(__dirname, 'src/assets/images')
         }
     }
 });
