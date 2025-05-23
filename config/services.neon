@@ -1,7 +1,6 @@
 services:
 	- App\Core\RouterFactory::createRouter
 	- App\Core\Authenticator
-	- App\Facades\StripeFacade(%stripe.apiKey%)
 
 	security.passwords: Nette\Security\Passwords(::PASSWORD_ARGON2ID)
 	nette.latteFactory:
