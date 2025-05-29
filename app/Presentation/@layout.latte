@@ -4,7 +4,16 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
 
-	<title>{ifset title}{include title|stripHtml}{/ifset}</title>
+	{ifset title}
+		<title>{include title}</title>
+		<meta property="og:title" content="{include title}" />
+	{/ifset}
+	{ifset metaUrl}
+		<meta property="og:url" content="{include metaUrl}" />
+	{/ifset}
+	{ifset metaImage}
+		<meta property="og:image" content="{include metaImage}" />
+	{/ifset}
 
 	{php $vite = new App\Facades\ViteFacade();}
 	{php echo $vite->getTags()}

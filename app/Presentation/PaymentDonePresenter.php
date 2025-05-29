@@ -9,7 +9,6 @@ use App\Facades\StripeFacade;
 final class PaymentDonePresenter extends BasePresenter
 {
     public function __construct(
-        private StripeFacade $stripe
     ) {
     }
 
