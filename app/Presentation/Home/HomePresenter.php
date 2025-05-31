@@ -8,4 +8,8 @@ use App\Presentation\BasePresenter;
 
 final class HomePresenter extends BasePresenter
 {
+    public function renderDefault(): void
+    {
+        $this->template->setFile(__DIR__ . '/../TemplateComponents/dashboard-home.latte');
+    }
 }
