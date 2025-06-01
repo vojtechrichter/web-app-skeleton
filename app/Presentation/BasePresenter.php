@@ -13,8 +13,15 @@ abstract class BasePresenter extends Presenter
     #[Inject]
     public Explorer $db;
 
+    private array $dialogs = [];
+
     public function redrawFlashes(): void
     {
         $this->redrawControl('flashes');
+    }
+
+    public function getDialogs(): array
+    {
+        return $this->dialogs;
     }
 }

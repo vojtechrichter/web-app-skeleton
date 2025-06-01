@@ -4,7 +4,9 @@
 {block pageSubtitle}Manage and view your data with interactive tables{/block}
 
 {block headerActions}
-<button class="btn btn-primary">
+<button
+        id="showDialog"
+        class="btn btn-primary">
     <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/>
     </svg>
@@ -17,6 +19,13 @@
     Filter
 </button>
 {/block}
+
+<dialog class="x-dialog">
+    <div class="x-dialog-content">
+        <p>example content</p>
+        <button class="x-button">Close</button>
+    </div>
+</dialog>
 
 {block dashboardContent}
 <!-- Users Table -->
@@ -43,7 +52,7 @@
             </select>
         </div>
     </div>
-    
+
     <div class="overflow-x-auto">
         <table class="w-full">
             <thead class="bg-secondary-50 border-b border-secondary-200">
@@ -260,7 +269,7 @@
             </tbody>
         </table>
     </div>
-    
+
     <!-- Pagination -->
     <div class="card-footer">
         <div class="flex items-center justify-between">
@@ -289,4 +298,4 @@
         </div>
     </div>
 </div>
-{/block} 
+{/block}

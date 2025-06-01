@@ -2,7 +2,6 @@
   "dependencies": {
     "@fancyapps/ui": "^5.0.36",
     "@hotwired/stimulus": "^3.2.2",
-    "@newlogic-digital/utils-js": "^1.1.4",
     "@stimulus-components/auto-submit": "^6.0.0",
     "@stimulus-components/dialog": "^1.0.1",
     "@stimulus-components/dropdown": "^3.0.0",
@@ -11,9 +10,7 @@
     "@stimulus-components/prefetch": "^4.0.0",
     "@stimulus-components/scroll-progress": "^5.0.0",
     "naja": "^3.2.1",
-    "stimulus-textarea-autogrow": "^4.1.0",
-    "winduum": "^2.2.5",
-    "winduum-stimulus": "^2.0.11"
+    "stimulus-textarea-autogrow": "^4.1.0"
   },
   "devDependencies": {
     "@tailwindcss/vite": "^4.1.5",

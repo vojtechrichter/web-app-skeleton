@@ -13,7 +13,6 @@ import Prefetch from "@stimulus-components/prefetch";
 import ScrollProgress from "@stimulus-components/scroll-progress";
 import TextareaAutogrow from 'stimulus-textarea-autogrow';
 import NajaController from './controllers/naja_controller';
-import { Dialog } from 'winduum-stimulus/components/dialog/index';
 
 // Dashboard Controllers
 import DashboardController from './controllers/dashboard_controller';
@@ -36,7 +35,6 @@ application.register('prefetch', Prefetch);
 application.register('scroll-progress', ScrollProgress);
 application.register('textarea-autogrow', TextareaAutogrow);
 application.register('naja', NajaController);
-application.register('dialog', Dialog);
 
 // Dashboard controllers
 application.register('dashboard', DashboardController);
@@ -54,3 +52,7 @@ naja.initialize();
 // Other
 
 Fancybox.bind('[data-fancybox]');
+MicroModal.init({
+    openTrigger: 'data-dialog-open',
+    closeTrigger: 'data-dialog-close'
+});
